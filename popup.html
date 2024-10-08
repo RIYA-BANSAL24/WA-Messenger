@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WhatsApp Translator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+  <h1 class="text-xl font-bold mb-4">WhatsApp Translator</h1>
+  
+  <div class="mb-4">
+    <label for="language-select" class="block text-sm font-medium text-gray-700">Preferred Language</label>
+    <select id="language-select" class="mt-1 block w-full">
+      <!-- Populate with language options -->
+      <option value="en">English</option>
+      <option value="es">Spanish</option>
+      <!-- Add more languages -->
+    </select>
+  </div>
+  
+  <div class="flex items-center">
+    <input type="checkbox" id="toggle-translation" class="mr-2">
+    <label for="toggle-translation">Enable Translation</label>
+  </div>
+  
+  <button id="save-settings" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Save</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
